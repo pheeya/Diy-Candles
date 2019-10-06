@@ -1,0 +1,48 @@
+
+.header 
+{
+    .container 
+    {
+        max-width:1300px;
+        margin:auto;
+    }
+    color:white;
+    background-color:rgb(26,26,26);
+    padding:20px 5px 5px 5px;
+font-size:14px;
+    .left, .right 
+    {
+        list-style-type:none;
+        display:inline-block;
+        margin:0;
+        padding:0;
+        li 
+        {
+            display:inline-block;
+            margin:0 20px;
+            cursor: pointer;
+            transition:all .3s;
+            border-bottom:2px solid rgba(250, 159, 41, 0);
+        svg 
+        {
+            height:13px;
+            width:25px;
+            vertical-align:-1px;
+        }
+        }
+        li:hover 
+        {
+            border-bottom:2px solid rgb(250, 142, 41);
+        }
+    }
+    .right 
+    {
+        float:right;
+    }
+    img 
+    {
+        margin:20px auto 30px auto;
+        width:180px;
+       display:block;
+    }
+}
