@@ -1,0 +1,27 @@
+.searchBox{
+   
+    margin:20px auto;
+    width:50%;
+    background-color:rgb(102,102,102);
+    display:flex;
+    box-shadow:0 0 3px black;
+    border:1px solid white;
+    input {
+        width:100%;
+        padding:10px 8px;
+        transition:all .2s;
+        background-color:rgb(226, 226, 226);
+        border:0;
+    }
+    .fa-search{
+        font-size:25px;
+        padding:10px 8px;
+        color:rgb(0, 0, 0);
+    }
+    input:focus
+    {
+        outline:none;
+        background-color:white;  
+        box-shadow:0 0 3px white;     
+    }
+}

@@ -5,24 +5,28 @@
     {
         max-width:1300px;
         margin:auto;
+        
     }
     color:white;
-    background-color:rgb(26,26,26);
+    background-color:rgb(32, 32, 32);
     padding:20px 5px 5px 5px;
 font-size:14px;
+
     .left, .right 
     {
         list-style-type:none;
         display:inline-block;
         margin:0;
+        margin-bottom:20px;
         padding:0;
         li 
         {
             display:inline-block;
             margin:0 20px;
+            padding:8px 3px;
             cursor: pointer;
             transition:all .3s;
-            border-bottom:2px solid rgba(250, 159, 41, 0);
+            border-bottom:4px solid rgba(250, 159, 41, 0);
         svg 
         {
             height:13px;
@@ -32,7 +36,7 @@ font-size:14px;
         }
         li:hover 
         {
-            border-bottom:2px solid rgb(250, 142, 41);
+            border-bottom:4px solid rgb(250, 142, 41);
         }
     }
     .right 
@@ -41,8 +45,8 @@ font-size:14px;
     }
     img 
     {
-        margin:20px auto 30px auto;
-        width:180px;
+        margin:20px auto 40px auto;
+        width:200px;
        display:block;
     }
 }

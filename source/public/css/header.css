@@ -1,6 +1,6 @@
 .header {
   color: white;
-  background-color: #1a1a1a;
+  background-color: #202020;
   padding: 20px 5px 5px 5px;
   font-size: 14px;
 }
@@ -12,14 +12,16 @@
   list-style-type: none;
   display: inline-block;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 .header .left li, .header .right li {
   display: inline-block;
   margin: 0 20px;
+  padding: 8px 3px;
   cursor: pointer;
   transition: all 0.3s;
-  border-bottom: 2px solid rgba(250, 159, 41, 0);
+  border-bottom: 4px solid rgba(250, 159, 41, 0);
 }
 .header .left li svg, .header .right li svg {
   height: 13px;
@@ -27,14 +29,14 @@
   vertical-align: -1px;
 }
 .header .left li:hover, .header .right li:hover {
-  border-bottom: 2px solid #fa8e29;
+  border-bottom: 4px solid #fa8e29;
 }
 .header .right {
   float: right;
 }
 .header img {
-  margin: 20px auto 30px auto;
-  width: 180px;
+  margin: 20px auto 40px auto;
+  width: 200px;
   display: block;
 }
 

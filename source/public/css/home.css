@@ -1,0 +1,27 @@
+.searchBox {
+  margin: 20px auto;
+  width: 50%;
+  background-color: #666666;
+  display: flex;
+  box-shadow: 0 0 3px black;
+  border: 1px solid white;
+}
+.searchBox input {
+  width: 100%;
+  padding: 10px 8px;
+  transition: all 0.2s;
+  background-color: #e2e2e2;
+  border: 0;
+}
+.searchBox .fa-search {
+  font-size: 25px;
+  padding: 10px 8px;
+  color: black;
+}
+.searchBox input:focus {
+  outline: none;
+  background-color: white;
+  box-shadow: 0 0 3px white;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,28 @@
+<div class="addProduct">
+    <h1>Add a new product</h1>
+    <form action="/admin/add-product" method="POST">
+        <div class="field">
+            <label for="title">Title</label>
+            <input type="text" name="title"  placeholder="Golgappy">
+        </div>
+
+        <div class="field">
+            <label for="imgUrl">Image link</label>
+            <input type="text" name="imgUrl" placeholder="google.com/golgappy">
+        </div>
+
+        <div class="field">
+            <label for="price">Price</label>
+            <input type="text" name="price" placeholder="PKR 30">
+        </div>
+
+        <div class="field">
+            <label for="description">Description</label>
+            <textarea name="description"cols="44" rows="1" placeholder="best food"></textarea>
+        </div>
+
+       <div class="field">
+            <button type="submit">Confirm new product</button>
+       </div>
+    </form>
+</div>
