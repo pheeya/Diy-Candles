@@ -2,10 +2,11 @@ const express = require("express");
 const path = require("path");
 const bodyParser=require("body-parser");
 const handlebars = require("express-handlebars");
-
+const mongoose = require("mongoose");
+var db = mongoose.connection;
 const app = express();
 //importing routes
-const userRoutes = require("./routes/user");
+const publicRoutes = require("./routes/public");
 const adminRoutes = require("./routes/admin");
 
 
@@ -19,7 +20,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
-app.use(userRoutes);
+app.use(publicRoutes);
 app.use("/admin", adminRoutes)
 
 
@@ -29,5 +30,9 @@ app.use(function(req,res,next){
 
 
 app.listen(3000, function(){
-    console.log("I'm listening")
+    mongoose.connect("mongodb+srv://Ali:35474597@diy-cluster-ggwdx.gcp.mongodb.net/candles?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
+    db.once("open",function(){
+        console.log("connected to mongodb");
+    });
+    console.log("I'm listening");
 });

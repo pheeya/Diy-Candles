@@ -33,7 +33,6 @@
 .addProduct .field input:focus, .addProduct .field textarea:focus {
   outline: none;
   background-color: white;
-  box-shadow: 0 0 3px white;
 }
 .addProduct .field button {
   padding: 6px;
