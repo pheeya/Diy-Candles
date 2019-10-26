@@ -1,9 +1,25 @@
-{{>search}}
+<div class="home">
+    {{>search}}
 
 <div class="categories">
+    <div class="category">
+    <div class="categoryHeading">Pre-Made</div>
     <div class="preMade">
+        <ul>
 {{#each products}}
-{{this.title}}
-{{/each}}
+    <li><div class="product">
+    <a href="product/{{this._id}}">
+        <div class="img">
+        <img src={{this.imgUrl}} alt="candle">
     </div>
+    <h4>{{this.title}}</h4>
+    <p>{{this.description}}</p>
+</div>
+    </a>
+</li>
+{{/each}}
+</ul>
+    </div>
+</div>
+</div>
 </div>

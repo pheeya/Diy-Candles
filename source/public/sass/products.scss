@@ -1,0 +1,85 @@
+.home {
+  max-width: 1600px;
+  margin: auto;
+  .categories {
+    .category {
+        color:white;
+        margin: 50px 3.5%;
+        .categoryHeading{
+            font-size:22px;
+        }
+      ul {
+        
+        list-style-type: none;
+       
+        padding: 10px;
+        background-color: rgb(77, 77, 77);
+        display: flex;
+        li {
+          a{
+            text-decoration: none;
+            color:white;
+          }
+            position:relative;
+            .adminControls{
+                position:absolute;
+                top:0;
+                right:0;
+                left:0;
+                text-align:center;
+                form{
+                  display:inline-block;
+                }
+                button{
+                    padding:6px;
+                    cursor: pointer;
+                    transition: all .2s;
+                    border:1px solid white;
+                    width:80px;
+                    box-shadow:0 0 5px rgba(59, 59, 59, 0.76);
+                    transition:background-color .2s;
+                }
+                button:hover{
+                    background-color:white;
+                }
+            }
+          margin: 10px;
+          background-color: rgb(102, 102, 102);
+          transition: all 0.2s;
+          .product {
+            display: inline-block;
+            text-align: center;
+            width: 180px;
+            cursor: pointer;
+
+            .img {
+              width: 100%;
+              overflow: hidden;
+              height: 180px;
+              text-align: center;
+            }
+            img {
+              width: 100%;
+              transition: all 0.2s;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            p {
+              margin: 15px;
+            }
+          }
+        }
+        li:hover img {
+          width: 105%;
+          transform: translateX(-2.5%);
+        }
+        li:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+}

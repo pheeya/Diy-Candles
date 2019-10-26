@@ -8,6 +8,9 @@ Router.get("/add-product", function(req,res,next){
 
 Router.post("/add-product", admin.addProductPost)
 
+Router.get("/shop", admin.getAdminShop);
+
+Router.post("/delete-product", admin.deleteProduct)
 
 
 

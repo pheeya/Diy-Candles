@@ -1,0 +1,81 @@
+.home {
+  max-width: 1600px;
+  margin: auto;
+}
+.home .categories .category {
+  color: white;
+  margin: 50px 3.5%;
+}
+.home .categories .category .categoryHeading {
+  font-size: 22px;
+}
+.home .categories .category ul {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #4d4d4d;
+  display: flex;
+}
+.home .categories .category ul li {
+  position: relative;
+  margin: 10px;
+  background-color: #666666;
+  transition: all 0.2s;
+}
+.home .categories .category ul li a {
+  text-decoration: none;
+  color: white;
+}
+.home .categories .category ul li .adminControls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.home .categories .category ul li .adminControls form {
+  display: inline-block;
+}
+.home .categories .category ul li .adminControls button {
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid white;
+  width: 80px;
+  box-shadow: 0 0 5px rgba(59, 59, 59, 0.76);
+  transition: background-color 0.2s;
+}
+.home .categories .category ul li .adminControls button:hover {
+  background-color: white;
+}
+.home .categories .category ul li .product {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  cursor: pointer;
+}
+.home .categories .category ul li .product .img {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
+  text-align: center;
+}
+.home .categories .category ul li .product img {
+  width: 100%;
+  transition: all 0.2s;
+}
+.home .categories .category ul li .product h1,
+.home .categories .category ul li .product h2,
+.home .categories .category ul li .product h3,
+.home .categories .category ul li .product h4,
+.home .categories .category ul li .product p {
+  margin: 15px;
+}
+.home .categories .category ul li:hover img {
+  width: 105%;
+  transform: translateX(-2.5%);
+}
+.home .categories .category ul li:hover {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=products.css.map */

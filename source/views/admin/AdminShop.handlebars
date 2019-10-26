@@ -1,0 +1,31 @@
+<div class="home">
+    {{>search}}
+
+    <div class="categories">
+        <div class="category">
+            <div class="categoryHeading">Pre-Made</div>
+            <div class="preMade">
+                <ul>
+                    {{#each products}}
+                    <li>
+                        <div class="product">
+                            <div class="img">
+                                <img src={{this.imgUrl}} alt="candle">
+                            </div>
+                            <h4>{{this.title}}</h4>
+                            <p>{{this.description}}</p>
+                        </div>
+                        <div class="adminControls">
+                            <form action="/admin/delete-product" method="POST">
+                                <button type="submit">Delete</button>
+                                <input type="hidden" name="prodId" value={{this._id}}>
+                            </form>
+                            <a href="admin/edit-product"><button>Edit</button></a>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
