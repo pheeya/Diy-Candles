@@ -1,0 +1,42 @@
+.ProductPage {
+  color: white;
+}
+.ProductPage .section {
+  display: flex;
+}
+.ProductPage .section .leftSection {
+  width: 25%;
+}
+.ProductPage .section .leftSection img {
+  display: block;
+  width: 100%;
+}
+.ProductPage .section .rightSection {
+  position: relative;
+  width: 75%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f3f2f2;
+}
+.ProductPage .section .rightSection p {
+  vertical-align: middle;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+.ProductPage .section .rightSection button {
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+}
+.ProductPage .section .rightSection button:hover {
+  background-color: white;
+}
+
+/*# sourceMappingURL=productPage.css.map */

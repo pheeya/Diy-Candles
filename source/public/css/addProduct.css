@@ -18,9 +18,11 @@
   width: 48%;
   font-size: 18px;
 }
-.addProduct .field input {
-  width: 100%;
-  border: 0;
+.addProduct .field textarea {
+  resize: both;
+  min-width: 100%;
+  min-height: 30px;
+  max-width: 100%;
 }
 .addProduct .field input, .addProduct .field textarea {
   box-shadow: 0 0 3px black;
@@ -29,6 +31,7 @@
   transition: all 0.15s;
   padding: 10px 8px;
   margin: 8px 0;
+  width: 100%;
 }
 .addProduct .field input:focus, .addProduct .field textarea:focus {
   outline: none;
@@ -44,4 +47,4 @@
   background-color: white;
 }
 
-/*# sourceMappingURL=addproduct.css.map */
+/*# sourceMappingURL=addProduct.css.map */

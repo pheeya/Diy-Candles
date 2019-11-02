@@ -12,10 +12,11 @@
   transition: all 0.2s;
   background-color: #e2e2e2;
   border: 0;
+  display: block;
 }
 .searchBox .fa-search {
   font-size: 25px;
-  padding: 10px 8px;
+  padding: 9px 8px;
   color: black;
 }
 .searchBox input:focus {
