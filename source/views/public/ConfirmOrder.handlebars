@@ -1,0 +1,18 @@
+<div class="confirmOrder">
+    {{#each orders}}
+
+
+    <h4>Order# {{this._id}}</h4>
+
+
+    {{#each this.products}}
+
+    {{this.product.title}}
+
+
+    {{/each}}
+
+
+
+    {{/each}}
+</div>

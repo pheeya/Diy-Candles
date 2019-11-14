@@ -3,6 +3,7 @@
   margin: auto;
   .categories {
     .category {
+      text-align: left;
         color:white;
         margin: 50px 3.5%;
         .categoryHeading{
@@ -15,7 +16,9 @@
         padding: 10px;
         background-color: rgb(77, 77, 77);
         display: flex;
+       
         li {
+          overflow: hidden;
           a{
             text-decoration: none;
             color:white;

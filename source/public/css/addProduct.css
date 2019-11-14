@@ -3,48 +3,5 @@
   text-align: center;
   color: white;
 }
-.addProduct form {
-  width: 50%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  padding: 5px;
-}
-.addProduct .field {
-  text-align: left;
-  color: white;
-  margin: 15px 5px;
-  width: 48%;
-  font-size: 18px;
-}
-.addProduct .field textarea {
-  resize: both;
-  min-width: 100%;
-  min-height: 30px;
-  max-width: 100%;
-}
-.addProduct .field input, .addProduct .field textarea {
-  box-shadow: 0 0 3px black;
-  border: 1px solid white;
-  background-color: #e2e2e2;
-  transition: all 0.15s;
-  padding: 10px 8px;
-  margin: 8px 0;
-  width: 100%;
-}
-.addProduct .field input:focus, .addProduct .field textarea:focus {
-  outline: none;
-  background-color: white;
-}
-.addProduct .field button {
-  padding: 6px;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: 1px solid white;
-}
-.addProduct .field button:hover {
-  background-color: white;
-}
 
 /*# sourceMappingURL=addProduct.css.map */

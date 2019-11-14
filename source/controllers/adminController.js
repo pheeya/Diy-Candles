@@ -11,7 +11,8 @@ module.exports.addProductPost = function (req, res, next) {
         title: title,
         imgUrl: imgUrl,
         price: price,
-        description: description
+        description: description,
+        userId:req.session.user._id
     });
 
 
@@ -26,7 +27,7 @@ module.exports.addProductPost = function (req, res, next) {
 module.exports.getAdminShop = function (req, res, next) {
     Product.find()
         .then(function (products) {
-            res.render("admin/AdminShop", { title: "Admin Shop", products: products });
+            res.render("admin/AdminShop", { title: "Admin Shop", products: products, loggedIn:req.session.loggedIn });
         })
         .catch(function (error) {
             console.log(error)
@@ -47,7 +48,7 @@ module.exports.getEditPage = function (req, res, next) {
 var prodId = req.params.prodId;
 Product.findById(prodId)
 .then(function(product){
-    res.render("admin/EditProduct", {title:"Edit Product", product:product})
+    res.render("admin/EditProduct", {title:"Edit Product", product:product, loggedIn:req.session.loggedIn })
 });
 };
 

@@ -1,0 +1,15 @@
+<div class="cart">
+    {{#each products}}
+    <ul>
+        <li>{{this.productId.title}}
+            <form method="POST" action="/cart/delete">
+                <input type="hidden" name="productId" value={{this.productId._id}}>
+                <button type="submit">x</button>
+            </form>
+        </li>
+    </ul>
+    {{/each}}
+    <form action="/checkout" method="POST">
+        <button type="submit">Checkout</button>
+    </form>
+</div>

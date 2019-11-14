@@ -4,8 +4,18 @@ const bodyParser = require("body-parser");
 const handlebars = require("express-handlebars");
 const mongoose = require("mongoose");
 const User = require("./Models/user");
+const session = require("express-session");
+const mongoDbStore = require("connect-mongodb-session")(session);
+
+
+const MONGODB_URI = "mongodb+srv://Ali:35474597@diy-cluster-ggwdx.gcp.mongodb.net/candles";
 var db = mongoose.connection;
+
 const app = express();
+const store = new mongoDbStore({
+    uri:MONGODB_URI,
+    collection:"sessions"
+});
 //importing routes
 const publicRoutes = require("./routes/public");
 const adminRoutes = require("./routes/admin");
@@ -19,19 +29,9 @@ app.set("views", "views")
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret:"35474597", resave:false, saveUninitialized:false, store: store}));
 
-//storing user in request object
-app.use(function (req, res, next) {
-    User.findById("5dbb1975f5de6233485a81c5")
-        .then(function (user) {
-            req.user = user;
-            console.log(`Connected User: ${user.name}`)
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-    next()
-})
+
 //Routes
 app.use(publicRoutes);
 app.use("/admin", adminRoutes)
@@ -43,7 +43,7 @@ app.use(function (req, res, next) {
 
 
 app.listen(3000, function () {
-    mongoose.connect("mongodb+srv://Ali:35474597@diy-cluster-ggwdx.gcp.mongodb.net/candles?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+    mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(function (result) {
             User.findOne()
                 .then(function (user) {

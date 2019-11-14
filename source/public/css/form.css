@@ -1,0 +1,50 @@
+.themed-form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 5px;
+}
+
+.field {
+  text-align: left;
+  color: white;
+  margin: 15px 5px;
+  width: 48%;
+  font-size: 18px;
+}
+.field textarea {
+  resize: both;
+  min-width: 100%;
+  min-height: 30px;
+  max-width: 100%;
+}
+.field input, .field textarea {
+  box-shadow: 0 0 3px black;
+  border: 1px solid white;
+  background-color: #e2e2e2;
+  transition: all 0.15s;
+  padding: 10px 8px;
+  margin: 8px 0;
+  width: 100%;
+}
+.field input:focus, .field textarea:focus {
+  outline: none;
+  background-color: white;
+}
+.field button {
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid white;
+}
+.field button:hover {
+  background-color: white;
+}
+
+.register {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=form.css.map */

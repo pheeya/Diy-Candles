@@ -3,9 +3,9 @@
         <img src="/media/logo.png" alt="diycandles"/>
 
     <ul class="left">
-        <li>HOME</li>
-        <li>BASKET</li>
-        <li>PRODUCTS<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+       <a href="/"><li>HOME</li></a> 
+        <a href="cart"><li>CART</li></a>
+       <a href="/products"><li>PRODUCTS<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 {{!-- <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
@@ -70,11 +70,15 @@
        inkscape:export-ydpi="268.47" />
   </g>
 </svg> --}}
-</li>
+</li></a>
+{{#if loggedIn}}
+<a href="/admin/add-product"><li>ADD PRODUCT</li></a> 
+{{/if}}
     </ul>
 
     <ul class="right">
-        <li>REGISTER/LOGIN</li>
+        <a href="/login"><li>REGISTER/LOGIN</li></a>
+        <form action="/logout" method="POST"><button><li>LOGOUT</li></button></form>
         <li>ABOUT US</li>
         <li>CONTACT</li>
     </ul>

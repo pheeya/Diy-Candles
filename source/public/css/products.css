@@ -3,6 +3,7 @@
   margin: auto;
 }
 .home .categories .category {
+  text-align: left;
   color: white;
   margin: 50px 3.5%;
 }
@@ -16,6 +17,7 @@
   display: flex;
 }
 .home .categories .category ul li {
+  overflow: hidden;
   position: relative;
   margin: 10px;
   background-color: #666666;

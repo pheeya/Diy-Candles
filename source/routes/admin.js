@@ -3,7 +3,7 @@ const Router = express.Router();
 const admin = require("../controllers/adminController")
 
 Router.get("/add-product", function (req, res, next) {
-    res.render('admin/AddProduct', { title: "Add a product" })
+    res.render('admin/AddProduct', { title: "Add a product", loggedIn:req.session.loggedIn  })
 });
 
 Router.post("/add-product", admin.addProductPost)
